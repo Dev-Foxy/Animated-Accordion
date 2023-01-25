@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.accordion{
+    width: 600px;
+}
+
+.title{
+    background-color: rebeccapurple;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.subtitle{
+    background-color: rgb(241, 227, 255);
+    height: 0;
+    overflow: hidden;
+    transition: height .5s ease;
+}
+
+.subtitle.show{
+    height: 100px;
+}
+
+.subtitle p{
+    padding: 10px;
+}
